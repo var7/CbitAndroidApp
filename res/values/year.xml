@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="years_array">
+        <item>I - I sem</item>
+        <item>I - II sem</item>
+        <item>II - I sem</item>
+    	<item>II - II sem</item>
+    	<item>III - I sem</item>
+    	<item>III - II sem</item>
+    	<item>IV - I sem</item>
+    	<item>IV - II sem</item>
+    	</string-array>
+</resources>

@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    <!-- <com.google.android.gms.ads.AdView     xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+						 android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="MY_AD_UNIT_ID"
+                         ads:adSize="BANNER"/>
+-->
+    <TextView
+        android:id="@+id/selectbranch_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Attendance"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/rollnumber_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Enter Roll No."
+        android:inputType="number|text"
+        android:layout_below="@id/selectbranch_text"
+        android:layout_alignParentLeft="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/rollnumber_input"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/rememberme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remember me"
+        android:layout_below="@id/password_input"
+        android:layout_alignParentLeft="true" />
+    
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/rememberme"
+        android:layout_alignParentLeft="true" />
+	<View
+	    android:id="@+id/line1"
+    	android:layout_width="fill_parent"
+    	android:layout_height="1dp"
+    	android:layout_margin="5dp"
+    	android:background="@android:color/darker_gray" 
+        android:layout_below="@id/button_login"
+        android:layout_alignParentLeft="true"
+    	/>
+    
+
+    <TextView
+        android:id="@+id/syllabus_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Syllabus"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_below="@id/line1"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner
+        android:id="@+id/year_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/syllabus_text"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:id="@+id/branch_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/syllabus_text"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/buttonsyllabus_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Syllabus"
+        android:layout_below="@id/branch_spinner"
+        android:layout_alignParentLeft="true" />
+
+	<View
+	    android:id="@+id/line2"
+    	android:layout_width="fill_parent"
+    	android:layout_height="1dp"
+    	android:layout_margin="5dp"
+    	android:background="@android:color/darker_gray" 
+        android:layout_below="@id/buttonsyllabus_go"
+        android:layout_alignParentLeft="true"
+    	/>
+	<TextView
+        android:id="@+id/busroutes_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Bus Routes"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_below="@id/line2"
+        android:layout_alignParentLeft="true"/>
+	<Button
+        android:id="@+id/button_bustable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Route Table"
+        android:layout_below="@id/busroutes_text"
+        android:layout_alignParentLeft="true" />
+    <!-- <Spinner
+        android:id="@+id/busroute_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/busroutes_text"
+        android:layout_toRightOf="@id/button_bustable" />
+
+     <Button
+        android:id="@+id/button_busroute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Route"
+        android:layout_below="@id/busroutes_text"
+        android:layout_toRightOf="@id/busroute_spinner" />
+
+ -->
+</RelativeLayout>

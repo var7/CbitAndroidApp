@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="branches_array">
+        <item>IT</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>Mech</item>
+        <item>MBA</item>
+        <item>EEE</item>
+        <item>Civil</item>
+        <item>MCA</item>
+    </string-array>
+</resources>
