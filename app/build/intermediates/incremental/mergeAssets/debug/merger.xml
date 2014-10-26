@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/Users/var/AndroidStudioProjects/CbitAndroidApp/app/src/main/assets" >
+            <file
+                name="list routes/image.jpg"
+                path="/Users/var/AndroidStudioProjects/CbitAndroidApp/app/src/main/assets/list routes/image.jpg" />
+            <file
+                name="list routes/list routes.htm"
+                path="/Users/var/AndroidStudioProjects/CbitAndroidApp/app/src/main/assets/list routes/list routes.htm" />
+            <file
+                name="list routes/list routes.pdf"
+                path="/Users/var/AndroidStudioProjects/CbitAndroidApp/app/src/main/assets/list routes/list routes.pdf" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/var/AndroidStudioProjects/CbitAndroidApp/app/src/debug/assets" />
+    </dataSet>
+
+</merger>
